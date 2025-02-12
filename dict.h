@@ -18,8 +18,6 @@ int dictionary_add_word(struct dictionary *d, const char *s);
 
 int dictionary_destroy(struct dictionary *d);
 
-int dictionary_add_words_from_file(int fd, struct dictionary *d);
-
 struct word_node *dictionary_get_word_list(struct dictionary *d);
 
 void dictionary_set_word_list_head(struct dictionary *d, struct word_node *new_head);
